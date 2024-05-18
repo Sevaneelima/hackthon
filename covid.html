@@ -1,0 +1,32 @@
+<h1 class='section-heading'>COVID RESULT</h1>
+<h2 class='section-subheading'>SEARCH COUNTRY NAME</h2>
+
+<div class="section-description">
+
+	<p class="section-subheading">
+	<form id="query-form">
+		<div>
+			<label for="ingredients">Country :</label>
+			<input class="textfield" id="ingredients" type="text" name="ingredients"  onChange="sanitizeInputs()" />
+            <select>
+                <option>India</option>
+                <option>China</option>
+                <option>Australia</option>
+                <option>europe</option>
+                <option>london</option>
+            </select>
+		</div>
+
+		<div class="button">
+			<br />
+			<input class="button" type="button" value="Reset"
+				id="resetButton"
+				onClick="this.form.reset();resetResults()" />
+			<input class="button" type="submit" value="Search ..." id="searchButton" />
+		</div>
+	</form>
+	</p>
+	<div class="section-subheading" id="search-results-heading"></div>
+	<div class="results-div" id="results"></div>
+    <script src="covid.js"></script> 
+</div>
